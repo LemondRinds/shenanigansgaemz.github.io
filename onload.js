@@ -73,7 +73,7 @@ window.onload = (event) => {
 	  }
   ]
 
-  /// and you could do something silly like render elements via js too even (jquery makes it neater)
+  /// and you could do something silly like render elements via js too even (jquery would make it neater)
   game_cards.forEach((gcData) => {
 	/// game card data
 	var gcDiv = document.createElement("div");
