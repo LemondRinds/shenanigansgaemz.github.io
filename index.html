@@ -12,21 +12,7 @@
 		<!--Chrome won't allow jqueries on local folders this way so the bar won't load if you just open the file directory. You can get around that to test locally with a python http server.-->
 		<!--In cmd, cd to the site directory. Then run python -m http.server. Then browse to http://127.0.0.1:8000/ -->
 		<script>
-		$.get("navigation.html", function(data){
-				$("#nav_placeholder").replaceWith(data);
-		});
-		</script>
-		<script>
-		$(function(){
-    var current = location.pathname;
-    $('li a').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-						}
-				})
-		})
+
 		</script>    
     <div class="content">
     	<h1>Hello World</h1>
