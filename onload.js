@@ -23,4 +23,51 @@ window.onload = (event) => {
         }
     })
   //})
+
+  /// example of moving some of the game info out of html and into objects
+  var game_cards = [
+	  { /// could be a game_card 'type', more object oriented, maybe overkill
+		  img_src:"images/spirit_island.webp",
+		  img_alt:"Spirit Island board game cover image",
+		  h1:"Spirit Island",
+		  desc:"Island Spirits join forces using elemental powers to defend their home from invaders.",
+		  /// this object could be an array you foreach over or something you spec out before hand like this, pros and cons, same w/ the game_card 'type'
+		  specs:{
+			  groups:"2-6 Players",
+			  timer:"60-240 Minutes",
+			  house:"Portlondia"
+		  },
+		  links:[
+			  {
+				  a:"https://boardgamegeek.com/boardgame/162886/spirit-island",
+				  img_src:"images/bgg_logo.svg",
+				  img_alt:"Spirit Island on BoardGameGeek"
+			  },
+			  {
+				  a:"https://spiritislandwiki.com/index.php?title=Main_Page",
+				  img_src:"images/si_reclaim.png",
+				  img_alt:"Spirit Island Wiki"
+			  },
+			  {
+				  a:"https://sick.oberien.de/?query=",
+				  img_src:"images/si_minor.png",
+				  img_alt:"Spirit Island Card Catalog"
+			  }
+		  ]
+	  },
+	  {
+		  img_src:"images/agricola.webp",
+		  img_alt:"Agricola Picture",
+		  h1:"Agricola",
+		  desc: "Build your farmstead by sowing fields and raising livestock. But don't forget to eat!",
+		  links:[
+		  	{
+				  a:"https://boardgamegeek.com/boardgame/31260/agricola",
+				  img_src:"images/bgg_logo.svg",
+				  img_alt:"no alt text? :c ada fines inbound! blind ppl will never know what is supposed to be here"  
+		  	}
+		  ]
+	  },
+	  {}
+  ]
 };
