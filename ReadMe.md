@@ -1,3 +1,5 @@
+You could take the json/object idea and go pretty far with it, could have a set of nodes that represents html tags, attributes, classes, css, and data for the game cards all in one object and just loop over it using something like document.createElement code in onload.js
+
 #nav_placeholder notes would make a good candidate for readMe
 
 - Chrome won't allow jqueries on local folders this way so the bar won't load if you just open the file directory. You can get around that to test locally with a python http server.
